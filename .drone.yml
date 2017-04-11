@@ -4,10 +4,10 @@ build:
         commands:
             - echo "Beginning new build"
     run_tests:
-	image: python:2-alpine
-	commands:
-	    - pip install -r requirements.txt
-	    - python testing.py
+        image: python:2-alpine
+        commands:
+            - pip install -r requirements.txt
+            - python testing.py
 publish:
     docker:
         repo: $$DOCKER_USERNAME/cicd_demoapp
